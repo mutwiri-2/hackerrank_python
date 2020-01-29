@@ -10,3 +10,11 @@ b = int(input())
 print(a+b)
 print(a-b)
 print(a*b)
+
+# Read two integers and print two lines. The first line should contain integer division. The second line should contain float division
+
+c = int(input())
+d = int(input())
+
+print(c//d)  #integer division
+print(c/d)  #float division
