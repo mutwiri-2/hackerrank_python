@@ -57,13 +57,13 @@
 #     print('\n'.join(sorted(results, key=str.lower)))
 
 physics_results = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
-results = []
+second_lowest_list = []
 names, marks = zip(*physics_results)
-second_lowest = sorted(list(set(marks)))[1]
+second_lowest = sorted(list(set(marks)))[1] # remove duplicates, sort and get the second element
 for object in physics_results:
     if object[1] == second_lowest: 
-        results.append(object[0])
-sorted_names = sorted(results, key=str.lower)
+        second_lowest_list.append(object[0])
+sorted_names = sorted(second_lowest_list, key=str.lower)
 print('\n'.join(sorted_names))
 # print('\n'.join(sorted(results, key=str.lower)))
             
