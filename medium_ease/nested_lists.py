@@ -59,9 +59,11 @@
 physics_results = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
 results = []
 names, marks = zip(*physics_results)
-second_lowest = sorted(list(marks))[1]
+second_lowest = sorted(list(set(marks)))[1]
 for object in physics_results:
     if object[1] == second_lowest: 
         results.append(object[0])
-print('\n'.join(sorted(results, key=str.lower)))
+sorted_names = sorted(results, key=str.lower)
+print('\n'.join(sorted_names))
+# print('\n'.join(sorted(results, key=str.lower)))
             
