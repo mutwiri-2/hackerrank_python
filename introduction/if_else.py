@@ -22,7 +22,7 @@ else:
         print("Not Weird")
 
 
-# another solution
+# another solution better shorter solution
 if n%2 == 0 and (n > 20 or n in range(2, 6)):
     print('Not Weird') 
 else:
