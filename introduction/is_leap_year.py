@@ -28,7 +28,6 @@ def is_leap(year):
         if(year % 100 ==0) and (year % 400 ==0):
             leap=True
     return leap
-    # Write your logic here
 
 print(is_leap(2000), True)
 print(is_leap(2400), True)
