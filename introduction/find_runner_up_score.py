@@ -9,5 +9,12 @@ def runner_up(arr):
     del(unique_arr[idx])
     return max(unique_arr)
 
+# cleaner solution
+# sorted() returns a new list with the numbers in the array sorted in ascending order (does not alter the original list) - different from .sort() list method, which sorts the list in place - mutates the list
+def runner_up(arr):
+    no_duplicates_arr = list(set(arr))
+    runner_up_score = sorted(no_duplicates_arr)[-2]
+    return runner_up_score
+
 
 print(runner_up([2,3,6,6,5]))
