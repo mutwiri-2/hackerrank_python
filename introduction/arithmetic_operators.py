@@ -7,8 +7,8 @@
 a = int(input("enter any integer: "))
 b = int(input("enter another integer: "))
 
-print("The sum of the integers is: ",a+b)
-print("The difference between the integers is:",a-b)
+print("The sum of the integers is:" ,a+b)
+print("The difference between the integers is:" ,a-b)
 print("The product of the integers is:" ,a*b)
 
 # Read two integers and print two lines. The first line should contain integer
